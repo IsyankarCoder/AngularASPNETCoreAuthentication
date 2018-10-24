@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "WebApplication10": {
+    "JsonWebTokenWithAngularAspNetCore": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
