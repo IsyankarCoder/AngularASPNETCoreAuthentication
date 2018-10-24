@@ -14,5 +14,7 @@ namespace WebApplication10.Models.Entities
 
         public string Location { get; set; }
 
+        public string Test { get; set; }
+
     }
 }
