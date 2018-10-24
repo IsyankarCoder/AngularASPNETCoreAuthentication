@@ -17,5 +17,6 @@ namespace JsonWebTokenWithAngularAspNetCore.Data
 
 
         public DbSet<JobSeeker> JobSeekers { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
