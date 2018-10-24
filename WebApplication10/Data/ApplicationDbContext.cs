@@ -13,6 +13,7 @@ namespace JsonWebTokenWithAngularAspNetCore.Data
         public ApplicationDbContext(DbContextOptions options)
             : base(options)
         {
+            //
         }
 
 
