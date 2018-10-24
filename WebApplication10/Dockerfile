@@ -8,16 +8,16 @@ EXPOSE 44304
 
 FROM microsoft/dotnet:2.1-sdk-nanoserver-sac2016 AS build
 WORKDIR /src
-COPY ["WebApplication10/WebApplication10.csproj", "WebApplication10/"]
-RUN dotnet restore "WebApplication10/WebApplication10.csproj"
+COPY ["JsonWebTokenWithAngularAspNetCore/JsonWebTokenWithAngularAspNetCore.csproj", "JsonWebTokenWithAngularAspNetCore/"]
+RUN dotnet restore "JsonWebTokenWithAngularAspNetCore/JsonWebTokenWithAngularAspNetCore.csproj"
 COPY . .
-WORKDIR "/src/WebApplication10"
-RUN dotnet build "WebApplication10.csproj" -c Release -o /app
+WORKDIR "/src/JsonWebTokenWithAngularAspNetCore"
+RUN dotnet build "JsonWebTokenWithAngularAspNetCore.csproj" -c Release -o /app
 
 FROM build AS publish
-RUN dotnet publish "WebApplication10.csproj" -c Release -o /app
+RUN dotnet publish "JsonWebTokenWithAngularAspNetCore.csproj" -c Release -o /app
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "WebApplication10.dll"]
+ENTRYPOINT ["dotnet", "JsonWebTokenWithAngularAspNetCore.dll"]

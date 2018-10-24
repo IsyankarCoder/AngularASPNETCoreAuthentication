@@ -9,17 +9,17 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using WebApplication10.Data;
-using WebApplication10.Models.Entities;
+using JsonWebTokenWithAngularAspNetCore.Data;
+using JsonWebTokenWithAngularAspNetCore.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
-using WebApplication10.Models;
+using JsonWebTokenWithAngularAspNetCore.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Linq.Expressions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-namespace WebApplication10
+namespace JsonWebTokenWithAngularAspNetCore
 {
     public class Startup
     {
@@ -43,7 +43,7 @@ namespace WebApplication10
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("WebApplication10")));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("JsonWebTokenWithAngularAspNetCore")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddIdentity<AppUser, IdentityRole>(o =>

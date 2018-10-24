@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 
 
-namespace WebApplication10.Models
+namespace JsonWebTokenWithAngularAspNetCore.Models
 {
     public class JwtIssuerOptions
     {

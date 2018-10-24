@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace WebApplication10.Helpers
+namespace JsonWebTokenWithAngularAspNetCore.Helpers
 {
     public static class Errors
     {

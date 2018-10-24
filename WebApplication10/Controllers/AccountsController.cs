@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication10.ViewModel;
-using WebApplication10.Data;
+using JsonWebTokenWithAngularAspNetCore.ViewModel;
+using JsonWebTokenWithAngularAspNetCore.Data;
 using Microsoft.AspNetCore.Identity;
-using WebApplication10.Models;
-using WebApplication10.Models.Entities;
-using WebApplication10.Helpers;
+using JsonWebTokenWithAngularAspNetCore.Models;
+using JsonWebTokenWithAngularAspNetCore.Models.Entities;
+using JsonWebTokenWithAngularAspNetCore.Helpers;
 
-namespace WebApplication10.Controllers
+namespace JsonWebTokenWithAngularAspNetCore.Controllers
 {
 
     [Route("api/account")]

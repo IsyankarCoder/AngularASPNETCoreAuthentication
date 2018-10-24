@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication10.Models;
+using JsonWebTokenWithAngularAspNetCore.Models;
 
-namespace WebApplication10.Controllers
+namespace JsonWebTokenWithAngularAspNetCore.Controllers
 {
     public class HomeController : Controller
     {

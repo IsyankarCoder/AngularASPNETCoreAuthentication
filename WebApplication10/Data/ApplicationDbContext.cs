@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WebApplication10.Models.Entities;
+using JsonWebTokenWithAngularAspNetCore.Models.Entities;
 
-namespace WebApplication10.Data
+namespace JsonWebTokenWithAngularAspNetCore.Data
 {
     public class ApplicationDbContext:IdentityDbContext<AppUser>
     {
